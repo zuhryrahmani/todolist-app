@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="../assets/icons/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div>Todos</div>
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start your journey with us</p>
+            <a href="../signup/signup.html"><button class='button'>SIGN UP</button></a>
+        </div>
+        <div class="right-panel">
+            <h1>Sign in to Task Manager</h1>
+            <div class="icon-container">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p>or use your email account</p>
+            <form id="form" action="">
+                <input id="signinEmail" type="email" placeholder="Email" required>
+                <br>
+                <input id="signinPass" type="password" placeholder="Password" required>
+                <br>
+                <button type="submit" class='button' onclick="signin()">SIGN IN</button>
+            </form>
+        </div>
+    </div>
+    <script src="../assets/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="../assets/icons/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div>Todos</div>
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <a href='../signin/signin.html'><button class='button'>SIGN IN</button></a>
+        </div>
+        <div class="right-panel">
+            <h1>Created Account</h1>
+            <div class="icon-container">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="icon-container">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p>or use your email for registration</p>
+            <form id="form" action="">
+                <input id="signupName" type="text" placeholder="Name" required>
+                <br>
+                <input id="signupEmail" type="email" placeholder="Email" required>
+                <br>
+                <input id="signupPass" type="password" placeholder="Password" required>
+                <br>
+                <button type="submit" class='button' onclick="signup()">SIGN UP</button>
+            </form>
+        </div>
+    </div>
+    <script src="../assets/script/script.js"></script>
+</body>
+</html>

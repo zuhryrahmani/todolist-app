@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="../assets/icons/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class='navbar-todos'>Todos</a>
+        <a href="../signin/signin.html" class='navbar-signout'>Sign Out</a>
+    </div>
+    <div class="container">
+        <div class="leftPanel">
+            <div class='profile'></div>
+        </div>
+        <div class='middlePanel'>
+            <p class='profileName'>Zuhry Abdi Rahmani</p>
+            <p>My Day</p>
+            <p>Important</p>
+            <p>Planned</p>
+            <p>Todo</p>
+        </div>
+        <div id='task' class='rightPanel'>
+            <div class="container-input">
+                <input id='addTask' type="text" placeholder="add task ...">
+                <div class="plus" onclick="task()">+</div>
+            </div>
+            <div class="content-title">
+                <span class="task">Task</span>
+                <span class="important">Important</span>
+            </div>
+            <div class="content">
+                <div class="content-check">
+                    <div class="checkbox">
+                        <i class="fas fa-check" onclick="check(event)"></i>
+                    </div>
+                </div>
+                <div class="content-name">
+                    <p>Reading a book</p>
+                </div>
+                <div class="content-important">
+                    <i class="fas fa-star" onclick="important(event)"></i>
+                </div>
+                <div class="content-logos">
+                    <i class="fas fa-trash-alt" onclick="remove(event)"></i>
+                    <i class="fas fa-pencil-alt" onclick="rename(event)"></i>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-check">
+                    <div class="checkbox">
+                        <i class="fas fa-check" onclick="check(event)"></i>
+                    </div>
+                </div>
+                <div class="content-name">
+                    <p>Writing new blog</p>
+                </div>
+                <div class="content-important">
+                    <i class="fas fa-star" onclick="important(event)"></i>
+                </div>
+                <div class="content-logos">
+                    <i class="fas fa-trash-alt" onclick="remove(event)"></i>
+                    <i class="fas fa-pencil-alt" onclick="rename(event)"></i>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-check">
+                    <div class="checkbox">
+                        <i class="fas fa-check" onclick="check(event)"></i>
+                    </div>
+                </div>
+                <div class="content-name">
+                    <p>Workout</p>
+                </div>
+                <div class="content-important">
+                    <i class="fas fa-star" onclick="important(event)"></i>
+                </div>
+                <div class="content-logos">
+                    <i class="fas fa-trash-alt" onclick="remove(event)"></i>
+                    <i class="fas fa-pencil-alt" onclick="rename(event)"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="../assets/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: #E5E5E5;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #0078D7;
+    width: 100%;
+    height: 60px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 50px;
+    line-height: 60px;
+}
+.navbar-todos {
+    float: left;
+    margin-left: 50px;
+}
+.navbar-signout {
+    float: right;
+}
+
+/* CONTENT */
+.container {
+    display: flex;
+    margin-top: 25px;
+}
+/* left panel */
+.leftPanel {
+    width: 130px;
+}
+.profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(../assets/images/profile.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    float: right;
+    margin: 10px 20px 0 0;
+    cursor: pointer;
+}
+/* middle panel */
+.middlePanel {
+    width: 300px;
+}
+.middlePanel .profileName {
+    margin: 30px 0 70px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.middlePanel p {
+    font-size: 18px;
+    margin: 55px 0;
+    cursor: pointer;
+}
+
+/* right panel */
+.rightPanel {
+    flex: auto;
+    margin-right: 50px;
+}
+.container-input {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    height: 120px;
+    position: relative;
+}
+.container-input input {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    width: 500px;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #C4C4C4;    ;
+    outline: none;
+    font-size: 18px;
+    padding: 3px;
+}
+.container-input .plus {
+    position: absolute;
+    bottom: 8px;
+    right: 50px;
+    font-size: 40px;
+    color: #C4C4C4;
+    cursor: pointer;
+}
+.content-title {
+    margin: 30px 0 -7px;
+}
+.content-title .task {
+    margin-left: 70px;
+}
+.content-title .important {
+    margin-left: 440px;
+}
+.content {
+    display: flex;
+    height: 60px;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+.content .content-check {
+    width: 70px;
+}
+.content .content-check .checkbox {
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    margin: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.content .content-check .checkbox i {
+    color: #FFFFFF;
+    line-height: 30px;
+    font-size: 20px;
+}
+.checkbox-icon {
+    color: #C4C4C4 !important;
+}
+.content .content-name {
+    flex: auto;
+    display: flex;
+}
+.content .content-name p {
+    line-height: 60px;
+    font-size: 18px;
+}
+.content .content-important {
+    width: 100px;
+    position: relative;
+}
+.content .content-important i {
+    font-size: 22px;
+    color: #C4C4C4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.important-icon {
+    color: #FEC112 !important;
+}
+.content .content-logos {
+    width: 200px;
+}
+.content .content-logos i {
+    font-size: 18px;
+    line-height: 60px;
+    margin-right: 50px;
+    float: right;
+    cursor: pointer;
+}
+.renameContainer {
+    margin: auto 0;
+}
+.rename {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #C4C4C4;
+}
